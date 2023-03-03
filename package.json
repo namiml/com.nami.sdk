@@ -1,0 +1,17 @@
+{
+	"name": "com.nami.sdk",
+	"displayName": "Nami Unity SDK",
+	"version": "3.0.5",
+	"unity": "2020.3",
+	"documentationUrl": "https://docs.namiml.com/",
+	"description": "Nami is a cloud service that helps mobile app publishers easily implement and sell in-app purchases and subscriptions. You can use Nami Unity SDK to provide the features for you Unity app.",
+	"dependencies": {
+	},
+	"keywords": [
+		"nami", 
+		"sdk"
+	],
+	"author": {
+		"name": "Nami"
+	}
+}
