@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NamiSDK.Settings;
 using NamiSDK.Utils;
 using UnityEngine;
 
