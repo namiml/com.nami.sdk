@@ -135,7 +135,7 @@
     dictionary[@"skuId"] = [purchase skuId];
     dictionary[@"transactionIdentifier"] = [purchase transactionIdentifier];
     dictionary[@"sku"] = [self serializeNamiSKU:[purchase sku]];
-    dictionary[@"entitlementsGranted"] = [self serializeNamiEntitlementArray:[purchase entitlementsGranted]];
+    // dictionary[@"entitlementsGranted"] = [self serializeNamiEntitlementArray:[purchase entitlementsGranted]]; TODO
     dictionary[@"transaction"] = [purchase transactionIdentifier];
     return dictionary;
 }
@@ -157,13 +157,11 @@
         return NULL;
     }
     NSMutableDictionary* dictionary = [NSMutableDictionary dictionary];
-    // dictionary[@"id"] = [campaign id];
-    // dictionary[@"rule"] = @("");
-    // dictionary[@"paywall"] = @("");
-    // dictionary[@"segment"] = @("");
-    // dictionary[@"type"] = @("");
-    // dictionary[@"value"] = @("");
-    // TODO
+    dictionary[@"id"] = [campaign id];
+    dictionary[@"rule"] = [campaign rule];
+    dictionary[@"paywall"] = [campaign paywall];
+    dictionary[@"segment"] = [campaign segment];
+    dictionary[@"value"] = [campaign value];
     return dictionary;
 }
 
